@@ -1,0 +1,1 @@
+<?php echo "It would be the first commit"; ?>
