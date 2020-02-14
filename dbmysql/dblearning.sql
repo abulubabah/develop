@@ -16,6 +16,28 @@
 CREATE DATABASE IF NOT EXISTS `learning` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `learning`;
 
+-- Dumping structure for table learning.class_entity
+CREATE TABLE IF NOT EXISTS `class_entity` (
+  `cls_id` int(10) NOT NULL,
+  `cls_code` varchar(10) NOT NULL DEFAULT '',
+  `cls_name` varchar(50) NOT NULL DEFAULT '',
+  `cls_desc` text NOT NULL,
+  PRIMARY KEY (`cls_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Table for class entity';
+
+-- Data exporting was unselected.
+
+-- Dumping structure for table learning.institution_entity
+CREATE TABLE IF NOT EXISTS `institution_entity` (
+  `instt_id` int(10) NOT NULL,
+  `instt_code` varchar(10) NOT NULL DEFAULT '',
+  `instt_name` varchar(50) NOT NULL DEFAULT '',
+  `instt_desc` text NOT NULL,
+  PRIMARY KEY (`instt_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Table for institution entity';
+
+-- Data exporting was unselected.
+
 -- Dumping structure for table learning.student_entity
 CREATE TABLE IF NOT EXISTS `student_entity` (
   `std_id` int(10) NOT NULL,
