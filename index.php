@@ -1,3 +1,3 @@
 <?php 
-	echo "testing";
-	?>
+	echo "NAMA SAYA REZA MALIK";
+?>
